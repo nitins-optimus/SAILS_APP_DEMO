@@ -28,17 +28,26 @@
     "sails-disk": "~0.10.9",
     "sails-hook-sequelize": "^1.0.1",
     "sails-hook-sequelize-blueprints": "^0.3.0",
-    "sequelize": "^3.30.4"
+    "sequelize": "^3.30.4",
+	 "pre-commit": "0.0.9"
   },
   "scripts": {
     "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+	"jshint": "jshint -c .jshintrc --exclude-path .gitignore ."
   },
+  "pre-commit": [
+    "jshint",
+    "coverage"
+  ],
   "main": "app.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/anonymous node/sails user/sequlizer-test-sails.git"
   },
   "author": "anonymous node/sails user",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "pre-push": "^0.1.1"
+  }
 }

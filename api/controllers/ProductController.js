@@ -14,7 +14,7 @@ module.exports = {
             return res.json({
                 err: null,
                 status: true,
-                data: product
+         data: product
             })
         }).catch((error) => {
             return res.json({
