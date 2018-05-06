@@ -37,9 +37,9 @@
     "start": "node app.js",
     "jshint": "jshint -c .jshintrc --exclude-path .gitignore ."
   },
-  "pre-commit": [
-    "jshint api"
-  ],
+  "pre-commit": {
+    "run" : ["jshint api"]
+  },
   "main": "app.js",
   "repository": {
     "type": "git",

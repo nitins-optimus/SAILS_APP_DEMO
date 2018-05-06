@@ -13,7 +13,7 @@ module.exports = {
         Product.add(req.body).then((product) => {
             return res.json({
              err: null,
-                status: true,
+              status: true,
         data: product
             })
         }).catch((error) => {
