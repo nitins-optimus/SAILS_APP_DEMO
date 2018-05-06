@@ -12,7 +12,7 @@ module.exports = {
         console.log(req.body)
         Product.add(req.body).then((product) => {
             return res.json({
-             err: null,
+            err: null,
             status: true,
         data: product
             })

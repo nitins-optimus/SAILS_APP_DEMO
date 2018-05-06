@@ -35,7 +35,7 @@
   "scripts": {
     "debug": "node debug app.js",
     "start": "node app.js",
-    "jshint": "jshint -c .jshintrc --exclude-path .gitignore ."
+    "jshint": "jshint api"
   },
   "pre-commit": {
     "run" : ["jshint api"]
