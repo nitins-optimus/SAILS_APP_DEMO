@@ -48,7 +48,6 @@
   "author": "anonymous node/sails user",
   "license": "",
   "devDependencies": {
-    "pre-commit": "0.0.9",
-    "pre-push": "^0.1.1"
+    "pre-commit": "0.0.9"
   }
 }
